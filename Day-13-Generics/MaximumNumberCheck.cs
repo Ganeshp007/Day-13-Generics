@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Day_13_Generics
 {
-    internal class MaximumNumberCheck
+    internal class MaximumNumberCheck<T> where T : IComparable
     {
-        public static string MaximumStringNumber(string firstString, string secondString, string thirdString)
+        public static T MaximumStringNumber(T firstString, T secondString, T thirdString)
         {
             if (firstString.CompareTo(secondString) > 0 && firstString.CompareTo(thirdString) > 0 ||
                 firstString.CompareTo(secondString) >= 0 && firstString.CompareTo(thirdString) > 0 ||

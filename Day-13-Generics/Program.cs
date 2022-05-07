@@ -1,17 +1,18 @@
 ﻿
 using Day_13_Generics;
 
-Console.WriteLine("---- Find max String ---- ");
+Console.WriteLine("---- Find max ---- ");
 
-string output1= MaximumNumberCheck.MaximumStringNumber("Peach","Banana","Apple");
-Console.WriteLine("Maximum String [TC.1]:- "+output1);
+int output1 = MaximumNumberCheck<int>.MaximumStringNumber(15,32,64);
+Console.WriteLine("Maximum int [TC.1]:- " + output1);
 
-string output2 = MaximumNumberCheck.MaximumStringNumber("Apple", "Peach", "Banana");
-Console.WriteLine("Maximum String [TC.2]:- " + output2);
+float output2 = MaximumNumberCheck<float>.MaximumStringNumber(45.5f,98.54f,56.21f);
+Console.WriteLine("Maximum float [TC.1]:- " + output2);
+
+string output3= MaximumNumberCheck<string>.MaximumStringNumber("Peach","Banana","Apple");
+Console.WriteLine("Maximum String [TC.1]:- "+output3);
 
 
-string output3= MaximumNumberCheck.MaximumStringNumber("Banana", "Apple", "Peach");
-Console.WriteLine("Maximum String [TC.3]:- " + output3);
 
 
 
