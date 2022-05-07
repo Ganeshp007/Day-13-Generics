@@ -2,8 +2,16 @@
 using Day_13_Generics;
 
 Console.WriteLine("---- Find max Number ---- ");
-int output = MaximumNumberCheck.MaximumIntegerNumber(11, 22, 33);
-Console.WriteLine("Maximum Number is:- "+output);
+
+int output1= MaximumNumberCheck.MaximumIntegerNumber(300, 200, 100);
+Console.WriteLine("Maximum Number [TC.1]:- "+output1);
+
+int output2 = MaximumNumberCheck.MaximumIntegerNumber(200,300,100);
+Console.WriteLine("Maximum Number [TC.1]:- " + output2);
+
+
+int output3= MaximumNumberCheck.MaximumIntegerNumber(100, 200, 300);
+Console.WriteLine("Maximum Number [TC.1]:- " + output3);
 
 
 
